@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "tutorial-django-doc"
+version = "0.1.0"
+description = ""
+authors = ["Davies <daviesaraujo@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "tutorial_django_doc"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
