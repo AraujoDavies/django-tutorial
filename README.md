@@ -66,4 +66,23 @@ Now, run migrate again to create those model tables in your database:
     $ python manage.py runserver
 
 
-# part 3
+# part 3 - cápitulo prático: básico sobre views (urls.py e view.py)
+
+
+# part 4
+
+
+## criando formulário de votos (details.html, results.html e view.py)
+
+    - forloop.counter
+    - |pluralize
+
+    - F()
+    - HttpResponseRedirect
+    - get_object_or_404
+    - reverse
+
+
+## Use generic views: Less code is better
+
+> veja os comentarios dos arquivos urls.py e views.py
