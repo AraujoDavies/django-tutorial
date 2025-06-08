@@ -86,3 +86,27 @@ Now, run migrate again to create those model tables in your database:
 ## Use generic views: Less code is better
 
 > veja os comentarios dos arquivos urls.py e views.py
+
+
+# part 5 - tests
+
+## create test inside tests.py in your app. In this case polls/tests.py
+
+    $ python manage.py test polls
+
+## The django test client
+
+    $ python manage.py shell
+
+    >>> from django.test.utils import setup_test_environment
+    >>> setup_test_environment()
+    >>> from django.test import Client
+    >>> client = Client()
+    >>> from django.urls import reverse
+    >>> response = client.get(reverse("polls:index"))
+    >>> response.status_code
+    >>> response.content
+    >>> response.context
+
+> Para testar a renderização do HTML pode usar LiveServerTestCase com Selenium
+> Fácil integração com coverage
