@@ -113,3 +113,12 @@ Now, run migrate again to create those model tables in your database:
 
 # part 6 - static files
 
+# part 7 - customizing admin
+
+create "templates" dir dentro da pasta do projeto "djangotutorial"
+
+Where are the Django source files? 
+
+    $ python -c "import django; print(django.__path__)"
+
+pegue o arquivo do  Django e adicione no template. e edite do seu jeito :D
