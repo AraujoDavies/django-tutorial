@@ -110,3 +110,6 @@ Now, run migrate again to create those model tables in your database:
 
 > Para testar a renderização do HTML pode usar LiveServerTestCase com Selenium
 > Fácil integração com coverage
+
+# part 6 - static files
+
