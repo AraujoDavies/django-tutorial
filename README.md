@@ -122,3 +122,9 @@ Where are the Django source files?
     $ python -c "import django; print(django.__path__)"
 
 pegue o arquivo do  Django e adicione no template. e edite do seu jeito :D
+
+# part 8 - debug
+
+    $ python -m pip install django-debug-toolbar
+
+Não é uma ferramenta nativa do django. Para integrá-la ao framework siga o passo a passo da doc: https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
