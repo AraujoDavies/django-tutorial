@@ -128,3 +128,20 @@ pegue o arquivo do  Django e adicione no template. e edite do seu jeito :D
     $ python -m pip install django-debug-toolbar
 
 Não é uma ferramenta nativa do django. Para integrá-la ao framework siga o passo a passo da doc: https://django-debug-toolbar.readthedocs.io/en/latest/installation.html
+
+
+# Dicas extras
+
+## Criando diagrama com models
+
+Download graphviz: https://graphviz.org/download/
+
+    $ python -m pip install django-extensions
+    $ python -m pip install pyparsing pydot
+    $ python manage.py graph_models -a --exclude-models User,Group,Permission,LogEntry,ContentType,Session -o my_project_erd.png
+
+Excluíndo modelos do Django:
+
+    $ python manage.py graph_models -a --exclude-models User,Group,Permission,LogEntry,ContentType,Session,AbstractBaseSession,AbstractUser -o my_project_erd.png
+
+![img_erd_django_tutorial](djangotutorial/my_project_erd.png)
